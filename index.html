@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Tracker 💰</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Crypto Tracker 💰</h1>
+  <input type="text" id="searchInput" placeholder="Search by name or symbol..." />
+  <div id="loading">Loading crypto data...</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Symbol</th>
+        <th id="sortPrice">Price ($) ⬍</th>
+        <th id="sortChange">24h Change (%) ⬍</th>
+        <th>24h Volume</th>
+        <th id="sortMarketCap">Market Cap ⬍</th>
+      </tr>
+    </thead>
+    <tbody id="cryptoTableBody"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
